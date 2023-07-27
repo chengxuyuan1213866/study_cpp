@@ -114,26 +114,64 @@ using namespace std;
 //
 //}
 
-#define PI 3.14  //使用宏定义常量
+//#define PI 3.14  //使用宏定义常量
+//int main()
+//{
+//    const int HOURS = 24;
+//    const int MINUTES = 60; 
+//    cout << PI * 10 * 10 << endl;
+//    cout << HOURS * MINUTES << endl;
+//    cout << HOURS * 60 << endl;
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    float a = 1.2, b(2.3), c;
+//    int d = 10;
+//    int e;
+//    cout << a << " " << b << " " << d << endl;
+//    //cout << c << " " << e << endl; 
+//    a = a + b;
+//    c = a + 20.5;
+//    e = d + 100;
+//    cout << a << " " << b << " " << c << endl;
+//    cout << d << " " << e << endl;
+//    return 0;
+//}
+
+
+//int main() 
+//{
+//    cout << 35 + 10 << " ";
+//    cout << 35 - 10 << " ";
+//    cout << 35 * 10 << " ";
+//    cout << 35 % 10 << " ";
+//    cout << 35 / 10 << endl;
+//    cout << 35.0 + 10.0 << " ";
+//    cout << 35.0 - 10.0 << " ";
+//    cout << 35.0 * 10.0 << " ";
+//    cout << 35.0 / 10.0 << endl;
+//    //cout << 35.0 / 10 << endl;    //不能对实数求余数，只能对两个整数进行取余
+//
+//
+//
+//    return 0;
+//
+//}
+
+
 int main()
 {
-    const int HOURS = 24;
-    const int MINUTES = 60; 
-    cout << PI * 10 * 10 << endl;
-    cout << HOURS * MINUTES << endl;
-    cout << HOURS * 60 << endl;
+    char c1 = 'A', c2 = 'a', c3, c4, c5;
+    c3 = c1 + 1;
+    c4 = c1 + 10;
+    c5 = c4 - 5;
+    cout << c1 << " " << c2 << " " << c3 << " ";
+    cout << c4 << " " << c5 << endl;
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
