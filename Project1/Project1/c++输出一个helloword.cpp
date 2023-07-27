@@ -162,17 +162,319 @@ using namespace std;
 //}
 
 
+//int main()
+//{
+//    char c1 = 'A', c2 = 'a', c3, c4, c5;
+//    c3 = c1 + 1;
+//    c4 = c1 + 10;
+//    c5 = c4 - 5;
+//    cout << c1 << " " << c2 << " " << c3 << " ";
+//    cout << c4 << " " << c5 << endl;
+//    c3 = c2 + 1;
+//    c4 = c2 + 10;
+//    c5 = c4 - 5;
+//    cout << c1 << " " << c2 << " " << c3 << " ";
+//    cout << c4 << " " << c5 << endl;
+//    cout << c2 - c1 << endl;
+//    char c6 = c1 - 25;
+//    cout << c6 << endl;
+//    return 0;
+//}
+
+//int main()
+//{
+//    int i = 10, j = 10, k, l, m, n;
+//    k = i++;
+//    l = j--;
+//    m = ++i;
+//    n = --j;
+//    cout << i << " ";  //12
+//    cout << j << " ";   //8
+//    cout << k << " ";   //10
+//    cout << l << " ";   //10
+//    cout << m << " ";   //12
+//    cout << n << endl;  //8
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    char c1 = 'A', c2;
+//    int a1 = 10, a2;
+//    c2 = c1 + 5;
+//    a2 = a1 + 20.6;
+//    cout << c2 << " " << c1 + 5 << endl;
+//    cout << a2 << " " << a1 + 20.6 << endl;
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    float s1, s2, s3, a, h;
+//    a = 4.0;
+//    h = 5.0;
+//    s1 = 1 / 2 * a * h;  //    1/2=0,会使整个式子变为0
+//    s2 = float(1) / 2 * a * h;   // 强制类型转换，将1强转为float型数据
+//    s3 = 1 / (float)(2) * a * h;
+//    cout << s1 << " ";
+//    cout << s2 << " ";
+//    cout << s3 << endl;
+//
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int a, b, c, d;
+//    a = 10;
+//    a += 20;
+//    cout << a << endl;   //30
+//    a -= 5;
+//    cout << a << endl;   //25   
+//    a *= 5 + 5;
+//    cout << a << endl;   //250
+//    a /= 5 - 3;
+//    cout << a << endl;  //125
+//    a %= 5 + 3;         
+//    cout << a << endl;  //5
+//
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    int a, b;
+//    a = 4;
+//    b = 10;
+//    cout << "a>b  ? " << (a > b) << endl;   // F
+//    cout << "a>=b ? " << (a >= b) << endl;   //F
+//    cout << "a<b  ? " << (a < b) << endl;     //T
+//    cout << "a<=b ? " << (a <= b) << endl;   //T
+//    cout << "a==b ? " << (a == b) << endl;   //F
+//    cout << "a!=b ? " << (a != b) << endl;   //T
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    int a = 4, b = 10, c = 20;
+//    // &&表示逻辑与
+//    cout << "  (a>b) && (c>b) ?  " << ((a > b) && (c > b)) << endl;     //F
+//    // ||表示逻辑或
+//    cout << "  (a>b) || (c>b) ?  " << ((a > b) || (c > b)) << endl;     // T
+//    cout << "  (a!=b) && (c!=b) ?  " << ((a != b) && (c != b)) << endl;  // T
+//    //! 表示逻辑非
+//    cout << "  !(c>b) ?  " << !(c > b) << endl;                             //F
+//    cout << "  !(a>b) || (c>b) ?  " << (!(a > b) && (c > b)) << endl;      //T 
+//    cout << "  (a>0) && (c>b) ?  " << ((a > 0) && (c > b)) << endl;         //T
+//
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    int a = 10, b = 20, max, min;
+//    max = a > b ? a : b;
+//    min = a < b ? a : b;
+////判断 a<b   满足返回a 不满足返回b
+//    cout << "max = " << max << endl;
+//    cout << "min = " << min << endl;
+//
+//
+//
+//    return 0;
+// }
+
+
+//----------------------------------------20--------------------------
+// 
+// 
+// 计算一个数的个位十位和百位
+//int main()
+//{
+//    int number, units, tens, hundreds;//三位数，个位，十位，百位
+//    cout << "请输入一个三位数: ";
+//    cin >> number;
+//    hundreds = number / 100;
+//    tens = (number - 100 * hundreds) / 10;
+//    units = number - 100 * hundreds - 10 * tens;
+//    cout << "这个数的百位、十位、个位分别是";
+//    cout << hundreds << ", " << tens << ", ";
+//    cout << units << endl;
+//    return 0;
+//}
+
+//华氏温度转换为摄氏温度
+
+//
+//int main()
+//{
+//    float f, c;
+//    cout << "请输入华氏温度 ：";
+//    cin >> f; 
+//    // !!!! 不能写成  5/9*(f-32)
+//    c = 5.0 / 9 * (f - 32);
+//    cout << "摄氏温度是：" << c << endl;
+//
+//    return 0;
+//
+//}
+
+//求圆的周长、面积 ， 球体的体积
+
+//int main()
+//{
+//    const float PI = 3.14;
+//    float l, s, v, r;
+//    cout << "请输入半径";
+//    cin >> r;
+//    l = 2 * PI * r;
+//    s = PI * r * r;
+//    v = 4.0 / 3 * PI * r * r * r;
+//    cout << "圆的周长是:" << l << endl; 
+//    cout << "圆的面积是:" << s << endl;
+//    cout << "球的体积是:" << v << endl;
+//    return 0;
+//}
+
+//3-1
+//int main()
+//{
+//    int a = 10, b = 20, c;
+//    cout << "a=" << a << endl;
+//    cout << "b=" << b << endl;
+//    c = a;
+//    a = b;
+//    b = c;
+//    cout << "a=" << a << endl;
+//    cout << "b=" << b << endl;
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int a, b, max;
+//    cout << "请输入两个整数：";
+//    cin >> a >> b;
+//    if (a>b)
+//    {
+//        max = a;
+//    }
+//    else
+//    {
+//        max = b;
+//    }
+//    cout << "两个数中较大的是：" << max;
+//
+//
+//    return 0;
+//}
+
+
+
+
+
+//
+//int main()
+//{
+//    int score;
+//    cout << "请输入成绩";
+//    cin >> score;
+//    if (score<60)
+//    {
+//        cout << "不及格，需要补考" << endl;
+//    }
+//    cout << "程序结束" << endl;
+//    return 0;
+//
+//}
+
+
+
+//输入三个数，输出其中最大的数
+//int main()
+//{
+//    int a, b, c;
+//    cout << "请输入三个数";
+//    cin >> a >> b >> c;
+//    if (a>b)
+//    {
+//        if (a>c)
+//        {
+//            cout << "三个数中最大的是" << a;
+//        }
+//        else
+//        {
+//            cout << "三个数中最大的是" << c;
+//        }
+//
+//    }
+//    else
+//    {
+//        if (b>c)
+//        {
+//            cout << "三个数中最大的是" << b;
+//        }
+//        else
+//        {
+//            cout << "三个数中最大的是" << c;
+//        }
+//    }
+//
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int s;
+//    cout << "请输入成绩";
+//    cin >> s;
+//    if (s>90)
+//    {
+//        cout << "优" << endl;
+//    }
+//    else if (s>=80)
+//    {
+//        cout << "优" << endl;
+//    }
+//    else if (s>=70)
+//    {
+//        cout << "良" << endl;
+//    }
+//    else if (s >= 60)
+//    {
+//        cout << "及格" << endl;
+//    }
+//    else
+//    {
+//        cout << "不及格" << endl;
+//    }
+//    return 0;
+//}
+
+
+
+
+// 根据年月推断每个月有几天  ------------------------------------------------------------------------未作
+
+//3-7
 int main()
 {
-    char c1 = 'A', c2 = 'a', c3, c4, c5;
-    c3 = c1 + 1;
-    c4 = c1 + 10;
-    c5 = c4 - 5;
-    cout << c1 << " " << c2 << " " << c3 << " ";
-    cout << c4 << " " << c5 << endl;
+    int year, month;
+    int days;
+    cout << "请输入年月，并以空格分隔年份和月份：";
+    cin >> year >> month;
+
     return 0;
 }
-
 
 
 
