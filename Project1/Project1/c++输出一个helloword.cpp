@@ -463,18 +463,185 @@ using namespace std;
 
 
 
-// 根据年月推断每个月有几天  ------------------------------------------------------------------------未作
+// 根据年月推断每个月有几天  ------------------------------------------------------------------------
 
 //3-7
-int main()
-{
-    int year, month;
-    int days;
-    cout << "请输入年月，并以空格分隔年份和月份：";
-    cin >> year >> month;
+//int main()
+//{
+//    int year, month;
+//    int days;
+//    cout << "请输入年月，并以空格分隔年份和月份：";
+//    cin >> year >> month;
+//    //1、3、5、7、8、10、12
+//    if ((month <= 7 && month % 2 != 0) || (month >= 8 && month % 2 == 0) )
+//    {
+//        days=31;
+//    }
+//    else if (month==2)
+//    {
+//        if ((year%4==0&&year%100!=0)||(year%400==0))
+//        {
+//            days = 29;
+//        }
+//        else
+//        {
+//            days = 28;
+//        }
+//    }
+//    else
+//    {
+//        days = 30;
+//    }
+//    cout << year << "年" << month << "月有" << days << "天 " << endl;
+//    return 0; 
+//}
 
-    return 0;
-}
+
+
+
+
+//求一元二次方程的根
+// 
+// 
+// 这里有点小问题
+// 
+//#include <cmath>
+//int main()
+//{
+//    double a, b, c, x1, x2, disc, p, q;
+//    cout << "请输入三个系数,中间用空格分开";
+//    cin >> a >> b >> c;
+//    if (a==0)
+//    {
+//        cout << "这不是一元二次方程" << endl;
+//    }
+//    else
+//    {
+//        disc = b * b - 4 * a * c;
+//        if (fabs(disc)<=1e-6)
+//        {
+//            cout << "x1=x2=" << -b / (2 * a) << endl;
+//        }
+//        else 
+//        {
+//            if (disc>1e-6)
+//            {
+//                x1 = (-b + sqrt(disc) / (2 * a));
+//                x2 = (-b - sqrt(disc) / (2 * a));
+//                cout << "x1 = " << x1 << endl;
+//                cout << "x2 = " << x2 << endl;
+//
+//            }
+//            else
+//            {
+//                p = b / (2 * a);
+//                q = sqrt(fabs(disc) / (2 * a));
+//                cout << "x1=" << p << "+" << q << "i" << endl;
+//                cout << "x2=" << p << "-" << q << "i" << endl;
+//
+//            }
+//        }
+//    }
+//    return 0;
+//}
+
+
+//switch 实现多分支
+
+//
+//int main()
+//{
+//    int c, i;
+//    cout << "请输入成绩";
+//    cin >> c;
+//    i = c / 10;
+//    switch (i)
+//    {
+//    case 10:
+//    case 9:
+//        cout << "优" << endl;
+//        break;
+//    case 8:
+//        cout << "良" << endl;
+//        break;
+//    case 7:
+//        cout << "中" << endl;
+//        break;
+//    case 6:
+//        cout << "及格" << endl;
+//        break;
+//    default:
+//        cout << "不及格" << endl;
+//        break;
+//    }
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int c,s,t;
+//	cout << "请输入月收入";
+//	cin >> c;
+//	s = c / 5000;
+//	switch (s)
+//	{
+//	case 0:
+//		cout << "不纳税" << endl;
+//		break;
+//
+//	case 1:
+//		t = (c - 5000) * 0.05;
+//		cout << "应纳税" << t << endl;
+//		break;
+//
+//	case 2:
+//	case 3:
+//		t = (c - 10000) * 0.1+5000*0.05;
+//		cout << "应纳税" << t << endl;
+//		break;
+//
+//	case 4:
+//	case 5:
+//		t = (c - 20000) * 0.15 + 10000*10 + 5000 * 0.05;
+//		cout << "应纳税" << t << endl;
+//		break;
+//
+//	default:
+//		t = 10000 * 0.15 + 10000 * 10 + 5000 * 0.05 + (c - 30000) * 0.2;
+//		cout << "应纳税" << t << endl;
+//		break;
+//	}
+//    return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

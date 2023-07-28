@@ -18,5 +18,11 @@
     <ClCompile Include="c++输出一个helloword.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1y2c.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="practice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
