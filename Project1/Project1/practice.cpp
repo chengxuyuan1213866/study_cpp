@@ -220,23 +220,149 @@ using namespace std;
 //}
 
 
-
+// 冒泡法排序
+//#include <iomanip>
 //int main()
 //{
-//	int a[10],i;
+//	int a[10],i,j,t;
 //	cout << "请输入10个整数，用空格分开:" << " ";
 //	for ( i = 0; i < 10; i++)
 //	{
 //		cin >> a[i];
 //	}
-//	for ( i = 0; i < length; i++)
+//	for ( i = 0; i < 10-1; i++)
 //	{
-//
+//		for ( j = 0; j < 10-i-1; j++)
+//		{
+//			if (a[j]>a[j+1])
+//			{
+//				t = a[j];
+//				a[j] = a[j + 1];
+//				a[j + 1] = t;
+//			}
+//		}
 //	}
+//	cout << "排序后的数据：";
+//	for ( i = 0; i < 10; i++)
+//	{
+//		cout << setw(5) << a[i];
+//	}
+//	cout << endl;
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	const int NUM = 2;
+//	double a[NUM][2];
+//	int i;
+//	for ( i = 0; i < NUM; i++)
+//	{
+//		cout << "请输入数学成绩" << "  ";
+//		cin >> a[i][0];
+//	}
+//	for (i = 0; i < NUM; i++)
+//	{
+//		cout << "请输入英语成绩" << "  ";
+//		cin >> a[i][1];
+//	}
+//	for ( i = 0; i < NUM; i++)
+//	{
+//		cout << i << "号学生的总成绩为" << a[i][0] << "+" << a[i][1] << "=" << a[i][0] + a[i][1] << endl;
+//	}
+//
+//
 //
 //
 //	return 0;
 //}
+
+
+
+//int main()
+//{
+//	int a[4][4] = { {11,25,35,75},
+//					{14,52,63,45},
+//					{42,52,47,58},
+//					{74,58,65,75} };
+//	int i, j, max;
+//	for ( i = 0; i < 4; i++)
+//	{
+//		for ( j = 0; j < 4; j++)
+//		{
+//			cout << a[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	max = a[0][0];
+//	for ( i = 0; i < 4; i++)
+//	{
+//		if (a[i][i]>max)
+//		{
+//			max = a[i][i];
+//		}
+//	}
+//	cout << "对角线上的最大值是：" << max << endl;
+//
+//	return 0;
+//}
+
+
+
+
+
+//107页
+//折半查找
+//int main()
+//{
+//	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k;
+//	cout << "请输入1-10之间你要查找的数字：" << " ";
+//	cin >> k;
+//	int len = sizeof(a) / sizeof(a[0]);
+//	int left = 0;
+//	int right = len - 1;
+//	while (left<=right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (k>a[mid])
+//		{
+//			left = mid+1;
+//		}
+//		else if(k<a[mid])
+//		{
+//			right = mid-1;
+//		}
+//		else
+//		{
+//			cout << "找到了下标为" << mid << endl;
+//			break;
+//		}
+//
+//	}
+//	if (left>right)
+//	{
+//		cout << "找不到" << endl;
+//	}
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
