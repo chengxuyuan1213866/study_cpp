@@ -416,31 +416,80 @@ using namespace std;
 //	return 0;
 //}
 
+//int main()
+//{
+//	int a, *p1, **p2;
+//	double b, *p3, **p4;
+//	a = 10;
+//	b = 22.3;
+//	p1 = &a;
+//	p3 = &b;
+//	p2 = &p1;
+//	p4 = &p3;
+//	**p2 = 20;
+//	**p4 = 45.0;
+//	cout << a << "\t" << *p1 << "\t" << **p2 << "\t" << "p1的地址" << p2 << endl;
+//	cout << b << "\t" << *p3 << "\t" << **p4 << "\t" << "p3的地址" << p4 << endl;
+//
+//	return 0;
+//}
+
+
+// 常量指针
+// 常量指针是指向常量的指针，指针指向的内存地址的内容是不可修改的
+// 例如    const char *p;
+
+//int main()
+//{
+//	int* p1, * p2;
+//	p1 = new int(10);
+//	p2 = new int[10];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		*(p2 + i) = i;
+//	}
+//	cout << *p1 << endl;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << *(p2 + i) << " ";
+//	}
+//	cout << endl;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << p2[i] << " ";
+//	}
+//	cout << endl;
+//	delete p1;
+//	delete[]p2;
+//
+//	return 0;
+//}
+
+
+
+// 选择排序  132
 int main()
 {
-	int a, *p1, **p2;
-	double b, *p3, **p4;
-	a = 10;
-	b = 22.3;
-	p1 = &a;
-	p3 = &b;
-	p2 = &p1;
-	p4 = &p3;
-	**p2 = 20;
-	**p4 = 45.0;
-	cout << a << "\t" << *p1 << "\t" << **p2 << "\t" << "p1的地址" << p2 << endl;
-	cout << b << "\t" << *p3 << "\t" << **p4 << "\t" << "p3的地址" << p4 << endl;
+	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = i; j < i; j++)
+		{
+			if (a[i]<a[j]) {
+				int temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+			}
+		}
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		cout << a[i] << " ";
+	}
+
 
 	return 0;
-}
-
-
-
-
-
-
-
-
+ }
 
 
 
