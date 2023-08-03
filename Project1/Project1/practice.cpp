@@ -470,17 +470,24 @@ using namespace std;
 // —°‘Ò≈≈–Ú  132
 int main()
 {
-	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	for (int i = 0; i < 10; i++)
+	int a[10] = { 10,9,8,7,6,5,4,3,2,1 };
+    int len = sizeof (a)/sizeof (a[0]);
+	for (int  i = 0; i < len-1; i++)
 	{
-		for (int j = i; j < i; j++)
+        int min = a[i];
+        int temp;
+		for (int j = i+1; j < len; j++)
 		{
-			if (a[i]<a[j]) {
-				int temp = a[i];
-				a[i] = a[j];
-				a[j] = temp;
-			}
-		}
+			if (a[j]<a[min])
+            {
+                temp = a[i];
+                a[i] = a[min];
+                a[min] = temp;
+            }
+
+
+        }
+
 	}
 	for (int i = 0; i < 10; i++)
 	{
