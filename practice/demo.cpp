@@ -101,27 +101,59 @@ using namespace std;
 
 // 使用引用作为函数的参数
 
-void swap(int &x,int &y)
+//void swap(int &x,int &y)
+//{
+//    int temp = x;
+//    x = y;
+//    y = temp;
+//}
+//
+//
+//
+//int main()
+//{
+//    int a = 10;
+//    int b = 20;
+//    swap(a,b);
+//    cout<< "a = " << a << "\t" << "b = " << b << endl;
+//    return 0;
+//}
+
+
+
+// 引用计算两个园的面积
+
+#define PI 3.14;
+
+
+double area1(double r)
 {
-    int temp = x;
-    x = y;
-    y = temp;
+    // 值传递
+    return r*r*PI;
+
 }
+void area2(double *s)
+{
+    //指针传递
+    *s = (*s)*(*s)*PI;
+}
+void area3(double &s)
+{
+    s = s*s*PI;
 
-
+}
 
 int main()
 {
-    int a = 10;
-    int b = 20;
-    swap(a,b);
-    cout<< "a = " << a << "\t" << "b = " << b << endl;
+    double r = 2.0;
+//    double s = area1(r);
+//    double *s = &r;
+//    area2(s);
+    double &s = r;
+    area3(s);
+    cout<< "面积为" << s << endl;
     return 0;
 }
-
-
-
-
 
 
 
