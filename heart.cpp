@@ -5,7 +5,7 @@
 #include "heart.h"
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 
 
 
@@ -16,23 +16,23 @@ void PrintHeart(int  size)
     {
         for (float x = -size;  x< size; x += 0.05)
         {
-            float eq = x * x +pow(5.0*y/2.0-sqrt(abs(x)),2);
+            float eq = (x * x +pow(5.0*y/2.0-sqrt(abs(x)),2));
             if (eq < size * size)
             {
-                std::cout<< "*";
+                cout<< "*";
             }
             else
             {
-                std::cout<<" ";
+                cout<<" ";
             }
         }
-        std::cout<<std::endl;
+        cout<<endl;
     }
 }
 
 int main()
 {
-    int a = 1;
+    int a = 2;
     PrintHeart(a);
     return 0;
 }
