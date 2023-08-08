@@ -28,7 +28,7 @@ using namespace std;
 // ------------------   函数   ----------------------------------
 
 // 函数的声明
-//int Max(int a,int b);
+// int Max(int a,int b);
 //int Power(int x,int n);
 //void swap(int *x,int *y);
 //
@@ -123,37 +123,96 @@ using namespace std;
 
 // 引用计算两个园的面积
 
-#define PI 3.14;
-
-
-double area1(double r)
-{
-    // 值传递
-    return r*r*PI;
-
-}
-void area2(double *s)
-{
-    //指针传递
-    *s = (*s)*(*s)*PI;
-}
-void area3(double &s)
-{
-    s = s*s*PI;
-
-}
-
-int main()
-{
-    double r = 2.0;
+//#define PI 3.14;
+//
+//
+//double area1(double r)
+//{
+//    // 值传递
+//    return r*r*PI;
+//
+//}
+//void area2(double *s)
+//{
+//    //指针传递
+//    *s = (*s)*(*s)*PI;
+//}
+//void area3(double &s)
+//{
+//    s = s*s*PI;
+//
+//}
+//
+//int main()
+//{
+//    double r = 2.0;
 //    double s = area1(r);
 //    double *s = &r;
 //    area2(s);
-    double &s = r;
-    area3(s);
-    cout<< "面积为" << s << endl;
+//    double &s = r;
+//    area3(s);
+//    cout<< "面积为" << s << endl;
+//    return 0;
+//}
+
+
+
+// 编写一个函数，将数组中的元素按相反的顺序存放
+//void swap(int arrp[],int len);
+//int main()
+//{
+//    int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//    int len = sizeof(arr)/sizeof (arr[0]);
+//    swap(arr,len);
+//    for (int i = 0;i<len;i++) {
+//        cout<< arr[i] << "\t";
+//    }
+//    return 0;
+//}
+//void swap(int arr[],int len)
+//{
+//
+//    for (int i = 0; i <= (len-1)/2; i++)
+//    {
+//        int temp = arr[i];
+//        arr[i] = arr[len-1-i];
+//        arr[len-1-i] = temp;
+//    }
+//
+//}
+
+void merge(char *a,char *b);
+int main()
+{
+    char ch[] = "abcdefg";
+    char ch1[] = "12346789";
+    char *p = ch;
+    char *p1 = ch1;
+    int len = strlen(ch);
+    merge(p,p1);
+    for (int i = 0;i<len;i++)
+    {
+        cout<< *(p+i)<<endl;
+    }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
