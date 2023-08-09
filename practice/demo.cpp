@@ -181,34 +181,130 @@ using namespace std;
 //
 //}
 
+/*
 void merge(char *a,char *b);
 int main()
 {
-    char ch[] = "abcdefg";
-    char ch1[] = "12346789";
-    char *p = ch;
-    char *p1 = ch1;
-    int len = strlen(ch);
-    merge(p,p1);
-    for (int i = 0;i<len;i++)
+    char ch[10] = "abcdefg";
+    char ch1[10] = "12346789";
+    merge(ch,ch1);
+    cout << ch << endl;
+    cout << ch1 << endl;
+
+    return 0;
+}
+void merge(char *a,char *b)
+{
+    char *p;
+    int len = strlen(a);
+    p = a+len;
+    while (*b != '\0')
     {
-        cout<< *(p+i)<<endl;
+        *p = *b;
+        p++;
+        b++;
+    }
+    *p = '\0';
+}
+*/
+
+// 函数嵌套调用和递归调用
+// 函数嵌套调用
+/*
+long f1(int n);
+long f2(int n);
+
+int main()
+{
+    int n= 5;
+    int b = f1(n);
+    cout << n << "的阶乘是" << b <<endl;
+    return 0;
+}
+
+long f2(int n)
+{
+    int sum = 1;
+    for (int i = 1; i <= n; i++) {
+        sum *= i;
+    }
+    return sum;
+}
+long f1(int num)
+{
+    int sum = 0;
+    for (int i = 1; i <= num; ++i) {
+        sum += f2(i);
+    }
+    return sum;
+}
+*/
+
+// 函数递归调用
+/*long fun(int n);
+int main()
+{
+    int a = 4;
+    int b = fun(a);
+    cout << b << endl;
+    return 0;
+}
+long fun(int n)
+{
+    if (n==1){
+        return n;
+    } else{
+        return fun(n-1)*n;
+    }
+
+
+
+}*/
+
+// 将一个数字字符串转换成对应整数
+/*int convent(char *a);
+int main()
+{
+    char a[] = "12345";
+    int b = convent(a);
+    cout << b <<endl;
+    return 0;
+}
+int convent(char *ch)
+{
+    int num = 0, digit;
+    for (int i = 0; *(ch+i) != '\0'; i++) {
+        digit = *(ch+i) - '0';
+        num = num*10 +digit;
+    }
+    return num;
+
+
+}*/
+
+// 删除字符串中的指定字符
+void DelChar(char *ch,char a);
+int main()
+{
+    char a[] = "dawedad";
+    int len = strlen(a);
+    char b = 'a';
+    DelChar(a,b);
+    for (int i = 0; i < len; i++) {
+        cout<<a[i]<< " ";
     }
     return 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+void DelChar(char *ch,char a)
+{
+    for (int i = 0; *(ch+i)!='\0'; i++) {
+        if (*(ch+i) == a)
+        {
+            *(ch+i) = ' ';
+        }
+    }
+}
 
 
 
