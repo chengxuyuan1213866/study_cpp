@@ -144,19 +144,21 @@ int mul(int x,int y)
 // 2.外部变量(全局变量)
 //变量的 存储类别
 // 1.静态变量
-int Factorial(int n);
+/*int Factorial(int n);
 int main()
 {
     int a = 4;
     for (int i = 1; i <= a; ++i) {
         cout << i << "! = " << Factorial(i) <<endl;
     }
-    /* 次数  static int f的值
+    */
+/* 次数  static int f的值
      * 1        1*1
      * 2        1*2
      * 3        2*3
      * 4        2*3*4
      * */
+/*
     return 0;
 }
 int Factorial(int n)
@@ -164,11 +166,41 @@ int Factorial(int n)
     static int f = 1;   // 静态变量，初始化为1，调用时不再重新初始化
     f*=n;
     return f;           // 离开函数后，静态变量f的值被保存
+}*/
+void fun();
+int i = 1;
+int main()
+{
+    static int a;
+    int b = -10;
+    int c= 0;
+    cout << "----MAIN----\n";
+    cout << " i: " << i << " a: " << a << " b: " << b << " c: " << c << endl;
+    // 1  0  -10  0
+    c = c+ 8;
+    fun();
+    // 33  4  0 15
+    cout << "----MAIN----\n";
+    cout << " i: " << i << " a: " << a << " b: " << b << " c: " << c << endl;
+    //  33 0 -10  8
+    i = i+10;
+    fun();
+    // 75  6 0 15
+    return 0;
 }
-
-
-
-
+void fun()
+{
+    // a和b 为静态局部变量，具有全局寿命，局部可见
+    // 只第一次进入函数时被初始化
+    static int a = 2;
+    static int b;
+    int c = 10;
+    a = a+2;
+    i = i+32;
+    c = c+5;
+    cout << "----FUN----\n";
+    cout << " i: " << i << " a: " << a << " b: " << b << " c: " << c << endl;
+}
 
 
 
