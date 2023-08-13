@@ -1,4 +1,4 @@
-C:\Users\Administrator\AppData\Local\JetBrains\CLion2023.1\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /cygdrive/e/Cfile/C++/study_cpp -B /cygdrive/e/Cfile/C++/study_cpp/cmake-build-debug
+C:\Users\Administrator\AppData\Local\JetBrains\CLion2023.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /cygdrive/e/Cfile/C++/study_cpp -B /cygdrive/e/Cfile/C++/study_cpp/cmake-build-debug
 -- The C compiler identification is GNU 11.4.0
 -- The CXX compiler identification is GNU 11.4.0
 -- Detecting C compiler ABI info
@@ -11,6 +11,6 @@ C:\Users\Administrator\AppData\Local\JetBrains\CLion2023.1\cygwin_cmake\bin\cmak
 -- Check for working CXX compiler: /usr/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done
--- Generating done
+-- Configuring done (38.0s)
+-- Generating done (0.0s)
 -- Build files have been written to: /cygdrive/e/Cfile/C++/study_cpp/cmake-build-debug

@@ -101,7 +101,7 @@ struct student{
     float score;
 };
 student s = {123131,'m',{2002,10,21},95};
-// struct student s = 
+// struct student s = {123131,'m',2002,10,21,95};
 
 
 
