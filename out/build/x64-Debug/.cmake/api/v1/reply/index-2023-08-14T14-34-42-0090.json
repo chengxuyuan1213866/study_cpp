@@ -11,31 +11,31 @@
 			"cmake" : "E:/VS2022/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
 			"cpack" : "E:/VS2022/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe",
 			"ctest" : "E:/VS2022/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe",
-			"root" : "E:/VS2022/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25"
+			"root" : "E:/VS2022/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 25,
-			"patch" : 1,
-			"string" : "3.25.1-msvc1",
-			"suffix" : "msvc1"
+			"minor" : 26,
+			"patch" : 4,
+			"string" : "3.26.4-msvc4",
+			"suffix" : "msvc4"
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-a4795bf76e05ad4c33dd.json",
+			"jsonFile" : "codemodel-v2-0db4496aa84987997c69.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 4
+				"minor" : 5
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-177eab3cf55db31f941e.json",
+			"jsonFile" : "cache-v2-68e4605e01d14910ead5.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-a393cc0bec6f836dfda3.json",
+			"jsonFile" : "cmakeFiles-v1-c248aa5ac2ef3a372fbc.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-177eab3cf55db31f941e.json",
+						"jsonFile" : "cache-v2-68e4605e01d14910ead5.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +99,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-a393cc0bec6f836dfda3.json",
+						"jsonFile" : "cmakeFiles-v1-c248aa5ac2ef3a372fbc.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
@@ -108,12 +108,12 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-a4795bf76e05ad4c33dd.json",
+						"jsonFile" : "codemodel-v2-0db4496aa84987997c69.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 4
+							"minor" : 5
 						}
 					},
 					{

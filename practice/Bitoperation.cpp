@@ -103,7 +103,7 @@ struct student{
 student s = {123131,'m',{2002,10,21},95};*/
 // struct student s = {123131,'m',2002,10,21,95};  这种方式与上面等价
 
-struct date{
+/*struct date{
     int year;
     int month;
     int day;
@@ -127,7 +127,102 @@ int main()
     cout << "出生年月日是：" << s1.birthday.year << "/" << s1.birthday.month << "/" << s1.birthday.day <<endl;
     cout << "成绩是：" << s1.score <<endl;
     return 0;
-}
+}*/
+
+// 结构数组
+/*struct student{
+    int no;
+    char gender;
+    int age;
+    float score;
+};
+
+int main()
+{
+    student s[3] = {
+            {110,'m',20,96},
+            {152,'w',45,85},
+            {159,'w',54,78},
+            };
+    float sum = 0;
+    for (int i = 0; i < 3; i++) {
+        sum += s[i].score;
+    }
+    cout << "平均成绩为" << sum/3 << endl;
+    return 0;
+};*/
+// 结构指针
+/*float avg(struct student *p,int n);
+ struct student{
+     int no;
+     char gender;
+     int age;
+     float score;
+ };
+ int main()
+ {
+     student s[3] = {
+             {110,'m',20,96},
+             {152,'w',45,85},
+             {159,'w',54,78},
+     };
+     cout << "平均成绩是" << avg(s,3) <<endl;
+
+     return 0;
+ }
+float avg(struct student *p,int n)
+{
+     float sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += (p+i) ->score;
+    }
+    return sum/n;
+}*/
+// 联合
+// 下面声明一个联合data
+/*
+union da{
+    int i;
+    char ch;
+    float f;
+};
+int main()
+{
+    da d;
+    d.i = 97;                       // 给一个成员赋值，影响所有成员
+    cout << d.i << "," << d.ch << "," << d.f << endl;
+    d.ch = 'A';
+    cout << d.i << "," << d.ch << "," << d.f << endl;
+    d.f = 100;
+    cout << d.i << "," << d.ch << "," << d.f << endl;
+    cout << sizeof(da) <<endl;    // 联合类型占用的字节数
+    cout << sizeof(d) << endl;
+    return 0;
+}*/
+
+// 求一个整数高位数和低位数
+union word{
+    unsigned char ch[2];  // 共两个字节
+    unsigned short num;     // 2个字节
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
