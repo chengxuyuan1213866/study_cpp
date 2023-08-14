@@ -89,7 +89,7 @@ int main()
 }*/
 
 // 1. 结构类型的嵌套
-struct date{
+/*struct date{
     int year;
     int month;
     int day;
@@ -97,13 +97,37 @@ struct date{
 struct student{
     int no;
     char sex;
+    struct date birthday;   // 嵌套date类型的结构变量
+    float score;
+};
+student s = {123131,'m',{2002,10,21},95};*/
+// struct student s = {123131,'m',2002,10,21,95};  这种方式与上面等价
+
+struct date{
+    int year;
+    int month;
+    int day;
+};
+struct student{
+    int no;
+    char gender;
     struct date birthday;
     float score;
 };
-student s = {123131,'m',{2002,10,21},95};
-// struct student s = {123131,'m',2002,10,21,95};
-
-
+int main()
+{
+    student s = {10086,'m',2002,10,21,78};
+    student s1 = {10000,'w',{2003,10,21},98};
+    cout << "学号是：" << s.no <<endl;
+    cout << "性别是：" << s.gender <<endl;
+    cout << "出生年月日是：" << s.birthday.year << "/" << s.birthday.month << "/" << s.birthday.day <<endl;
+    cout << "成绩是：" << s.score <<endl;
+    cout << "学号是：" << s1.no <<endl;
+    cout << "性别是：" << s1.gender <<endl;
+    cout << "出生年月日是：" << s1.birthday.year << "/" << s1.birthday.month << "/" << s1.birthday.day <<endl;
+    cout << "成绩是：" << s1.score <<endl;
+    return 0;
+}
 
 
 
