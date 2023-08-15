@@ -62,6 +62,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Cfile\C++\study_cpp\practice\Demo1" />
+    </key>
+  </component>
   <component name="RunManager" selected="C/C++ File.NameSpace.cpp">
     <configuration name="Bitoperation.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="study_cpp" TARGET_NAME="Bitoperation.cpp" CONFIG_NAME="Bitoperation.cpp">
       <option name="sourceFile" value="practice\Bitoperation.cpp" />
@@ -139,7 +144,7 @@
       <workItem from="1692103386660" duration="695000" />
       <workItem from="1692104102759" duration="208000" />
       <workItem from="1692106988807" duration="34000" />
-      <workItem from="1692107033827" duration="1428000" />
+      <workItem from="1692107033827" duration="3026000" />
     </task>
     <servers />
   </component>
