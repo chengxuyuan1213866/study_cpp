@@ -127,6 +127,10 @@
       <workItem from="1692018999522" duration="5000" />
       <workItem from="1692022175059" duration="1184000" />
       <workItem from="1692023987053" duration="3897000" />
+      <workItem from="1692059331512" duration="1913000" />
+      <workItem from="1692101995341" duration="386000" />
+      <workItem from="1692102443913" duration="12000" />
+      <workItem from="1692103386660" duration="337000" />
     </task>
     <servers />
   </component>
@@ -138,17 +142,6 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/practice/Bitoperation.cpp</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

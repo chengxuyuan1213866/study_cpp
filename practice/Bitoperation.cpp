@@ -199,14 +199,55 @@ int main()
     cout << sizeof(d) << endl;
     return 0;
 }*/
-
-// 求一个整数高位数和低位数
+/*// 求一个整数高位数和低位数
 union word{
     unsigned char ch[2];  // 共两个字节
     unsigned short num;     // 2个字节
 };
+int main()
+{
+    word w;
+    w.num = 2856;
+    cout << w.num <<"低位数为："  << (int) w.ch[0] << "高位数为：" << (int)w.ch[1] << endl;
+    w.ch[0] = 93;
+    cout << w.num <<"低位数为："  << (int) w.ch[0] << "高位数为：" << (int) w.ch[1] << endl;
+    return 0;
+}*/
+// 枚举
+/*enum weekday {Sun = 7,Mon = 1,Tue,Wed,Thu,Fri,Sat};
 
+int main()
+{
+    int day;
+    cout << "请输入星期几:" << " ";
+    cin >> day;
+    // weekday day = Mon;
+    int a = day;
 
+    // day = a;
+    day = (weekday) a;           // 可以强制类型转换
+*//*    switch (day) {
+            case Sun:cout << "星期天" <<endl;
+                break;
+            case Mon:cout << "星期一" <<endl;
+                break;
+            case Tue:cout << "星期二" <<endl;
+                break;
+            case Wed:cout << "星期三" <<endl;
+                break;
+            case Thu:cout << "星期四" <<endl;
+                break;
+            case Fri:cout << "星期五" <<endl;
+                break;
+            case Sat:cout << "星期六" <<endl;
+                break;
+        default:
+            cout << "输入有误" <<endl;
+            break;
+    }*//*
+    cout << day << endl;
+    return 0;
+}*/
 
 
 
