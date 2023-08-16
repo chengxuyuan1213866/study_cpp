@@ -7,8 +7,9 @@
   },
   "ExpandedNodes": [
     "",
-    "\\practice"
+    "\\OOP",
+    "\\OOP\\cmake-build-debug"
   ],
-  "SelectedNode": "\\Project1",
+  "SelectedNode": "\\OOP\\cmake-build-debug",
   "PreviewInSolutionExplorer": false
 }
