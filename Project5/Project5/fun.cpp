@@ -24,6 +24,8 @@ void B(double x)
 }
 int main()
 {
+    void (*f)(double);
+    void& b = f;
     A(B, 2);
     return 0;
 }
