@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-int main() {
+/*int main() {
     clock_t start = clock();
 
     int n = 100;
@@ -15,5 +15,5 @@ int main() {
     double elapsed = (double) (stop - start) / CLOCKS_PER_SEC;
     printf("\nTime elapsed: %.5f\n", elapsed);
     return 0;
-}
+}*/
 

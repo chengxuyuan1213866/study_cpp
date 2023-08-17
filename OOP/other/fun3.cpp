@@ -1,6 +1,7 @@
 //
 // Created by Administrator on 2023/8/16.
 //
+/*
 #include <iostream>
 using namespace std;
 
@@ -23,6 +24,7 @@ int main()
     cout << f2(6,5) << endl;
     return 0;
 }
+*/
 
 
 

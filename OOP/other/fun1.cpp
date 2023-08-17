@@ -1,7 +1,7 @@
 //
 // Created by Administrator on 2023/8/16.
 //
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 inline void B(int x, int y);
 
@@ -30,7 +30,7 @@ int main()
 {
     A(2,3);
     return 0;
-}
+}*/
 
 
 

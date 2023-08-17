@@ -1,6 +1,7 @@
 //
 // Created by Administrator on 2023/8/16.
 //
+/*
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -17,4 +18,4 @@ int main() {
     double elapsed = (double) (stop - start) / CLOCKS_PER_SEC;
     printf("\nTime elapsed: %.5f\n", elapsed);
     return 0;
-}
+}*/

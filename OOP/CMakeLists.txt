@@ -3,6 +3,4 @@ project(OOP)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(OOP main.cpp
-        fun1.cpp
-        fun2.cpp)
+add_executable(OOP src/OOP/Main.cpp)

@@ -2,6 +2,7 @@
 // Created by Administrator on 2023/8/16.
 //
 
+/*
 #include <iostream>
 using namespace std;
 
@@ -40,4 +41,4 @@ int main()
 
     C(a,2);
     return 0;
-}
+}*/

@@ -49,23 +49,11 @@ cmake_ninja_workdir = /cygdrive/e/Cfile/C++/study_cpp/OOP/cmake-build-debug/
 
 build cmake_object_order_depends_target_OOP: phony || CMakeFiles/OOP.dir
 
-build CMakeFiles/OOP.dir/main.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive/e/Cfile/C++/study_cpp/OOP/main.cpp || cmake_object_order_depends_target_OOP
-  DEP_FILE = CMakeFiles/OOP.dir/main.cpp.o.d
+build CMakeFiles/OOP.dir/src/OOP/Main.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive/e/Cfile/C++/study_cpp/OOP/src/OOP/Main.cpp || cmake_object_order_depends_target_OOP
+  DEP_FILE = CMakeFiles/OOP.dir/src/OOP/Main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/OOP.dir
-  OBJECT_FILE_DIR = CMakeFiles/OOP.dir
-
-build CMakeFiles/OOP.dir/fun1.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive/e/Cfile/C++/study_cpp/OOP/fun1.cpp || cmake_object_order_depends_target_OOP
-  DEP_FILE = CMakeFiles/OOP.dir/fun1.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/OOP.dir
-  OBJECT_FILE_DIR = CMakeFiles/OOP.dir
-
-build CMakeFiles/OOP.dir/fun2.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive/e/Cfile/C++/study_cpp/OOP/fun2.cpp || cmake_object_order_depends_target_OOP
-  DEP_FILE = CMakeFiles/OOP.dir/fun2.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/OOP.dir
-  OBJECT_FILE_DIR = CMakeFiles/OOP.dir
+  OBJECT_FILE_DIR = CMakeFiles/OOP.dir/src/OOP
 
 
 # =============================================================================
@@ -75,7 +63,7 @@ build CMakeFiles/OOP.dir/fun2.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive
 #############################################
 # Link the executable OOP.exe
 
-build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/main.cpp.o CMakeFiles/OOP.dir/fun1.cpp.o CMakeFiles/OOP.dir/fun2.cpp.o
+build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP/Main.cpp.o
   FLAGS = -g
   LINK_FLAGS = -Wl,--enable-auto-import
   OBJECT_DIR = CMakeFiles/OOP.dir
