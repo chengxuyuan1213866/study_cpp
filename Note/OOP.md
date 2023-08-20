@@ -72,3 +72,66 @@ int Rect::getPerimeter() {
 类名::函数名(参数表)
 ```
 
+## 成员访问控制
+
+类的结构中有
+
+- 数据成员(属性)
+- 成员函数(方法)
+
+三种访问权限
+
+1. 私有访问权限private  -- 只允许类中的成员函数访问
+2. protected后面声明的数据成员或成员函数具有保护访问权限
+3. public后面声明的数据成员或者成员函数具有公有访问权限，在任何函数中都可访问
+
+```c++
+
+#include "Rect.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+    Rect c1,c2;
+    c1.setLength(200);
+    c1.setWidth(100);
+    c2.setLength(20);
+    c2.setWidth(10);
+    // c1.length = 20;  // 这一句会报错
+    cout << "矩形1的面积" << c1.getArea() << endl;
+    cout << "矩形1的周长" << c1.getPerimeter() << endl;
+    cout << "矩形2的面积" << c2.getArea() << endl;
+    cout << "矩形2的周长" << c2.getPerimeter() << endl;
+    return 0;
+}
+// 'length' is a private member of 'Rect'
+```
+
+### 重点！！！！
+
+- 虽然可以使用默认的访问权限，但是为了提高程序的清晰性，提倡使用关键字明确指明成员的访问权限
+
+## 类与结构的比较
+
+类就是在结构的基础上增加了成员函数。事实上，在C++中，类也可以用struct声明
+
+- struct与class的区别是：如果不指定访问权限，前者默认的访问权限是公用的，而后者是私有的
+
+```c++
+// 使用struct声明类
+struct Rect{
+private:
+    int length;
+    int width;
+public:
+    void setLength(int l);
+    void setWidth(int w);
+    int getArea();
+    int getPerimeter();
+};
+```
+
+这种定义方式与class声明的结果完全相同。
+
+
+

@@ -6,9 +6,6 @@
 #include <iostream>
 using namespace std;
 
-
-
-
 void Rect::setLength(int l) {
     length = l;
 }

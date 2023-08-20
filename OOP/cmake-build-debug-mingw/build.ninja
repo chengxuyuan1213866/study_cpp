@@ -55,6 +55,12 @@ build CMakeFiles/OOP.dir/src/OOP/Main.cpp.obj: CXX_COMPILER__OOP_unscanned_Debug
   OBJECT_DIR = CMakeFiles\OOP.dir
   OBJECT_FILE_DIR = CMakeFiles\OOP.dir\src\OOP
 
+build CMakeFiles/OOP.dir/src/OOP/Rect.cpp.obj: CXX_COMPILER__OOP_unscanned_Debug E$:/Cfile/C++/study_cpp/OOP/src/OOP/Rect.cpp || cmake_object_order_depends_target_OOP
+  DEP_FILE = CMakeFiles\OOP.dir\src\OOP\Rect.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\OOP.dir
+  OBJECT_FILE_DIR = CMakeFiles\OOP.dir\src\OOP
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OOP
@@ -63,7 +69,7 @@ build CMakeFiles/OOP.dir/src/OOP/Main.cpp.obj: CXX_COMPILER__OOP_unscanned_Debug
 #############################################
 # Link the executable OOP.exe
 
-build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP/Main.cpp.obj
+build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP/Main.cpp.obj CMakeFiles/OOP.dir/src/OOP/Rect.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\OOP.dir
@@ -72,39 +78,6 @@ build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP/Main.
   TARGET_FILE = OOP.exe
   TARGET_IMPLIB = libOOP.dll.a
   TARGET_PDB = OOP.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Main
-
-
-#############################################
-# Order-only phony target for Main
-
-build cmake_object_order_depends_target_Main: phony || CMakeFiles/Main.dir
-
-build CMakeFiles/Main.dir/src/OOP/Main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug E$:/Cfile/C++/study_cpp/OOP/src/OOP/Main.cpp || cmake_object_order_depends_target_Main
-  DEP_FILE = CMakeFiles\Main.dir\src\OOP\Main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Main.dir
-  OBJECT_FILE_DIR = CMakeFiles\Main.dir\src\OOP
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Main
-
-
-#############################################
-# Link the executable Main.exe
-
-build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/src/OOP/Main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Main.exe
-  TARGET_IMPLIB = libMain.dll.a
-  TARGET_PDB = Main.exe.dbg
 
 
 #############################################
@@ -132,8 +105,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Main: phony Main.exe
-
 build OOP: phony OOP.exe
 
 # =============================================================================
@@ -144,7 +115,7 @@ build OOP: phony OOP.exe
 #############################################
 # Folder: E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw
 
-build all: phony OOP.exe Main.exe
+build all: phony OOP.exe
 
 # =============================================================================
 # Built-in targets

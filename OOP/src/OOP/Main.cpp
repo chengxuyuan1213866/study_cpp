@@ -11,10 +11,10 @@ int main()
     c1.setWidth(100);
     c2.setLength(20);
     c2.setWidth(10);
+    // c1.length = 20;
     cout << "矩形1的面积" << c1.getArea() << endl;
     cout << "矩形1的周长" << c1.getPerimeter() << endl;
     cout << "矩形2的面积" << c2.getArea() << endl;
     cout << "矩形2的周长" << c2.getPerimeter() << endl;
-
     return 0;
 }

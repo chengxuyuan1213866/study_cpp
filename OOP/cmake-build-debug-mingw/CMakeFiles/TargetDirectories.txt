@@ -1,4 +1,3 @@
 E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/OOP.dir
-E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/Main.dir
 E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
 E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

@@ -67,7 +67,7 @@
       <recent name="E:\Cfile\C++\study_cpp\practice\Demo1" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.NameSpace.cpp">
+  <component name="RunManager" selected="C/C++ File.Main.cpp">
     <configuration name="Bitoperation.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="study_cpp" TARGET_NAME="Bitoperation.cpp" CONFIG_NAME="Bitoperation.cpp">
       <option name="sourceFile" value="practice\Bitoperation.cpp" />
       <method v="2">
@@ -87,6 +87,12 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="study_cpp" TARGET_NAME="Main.cpp" CONFIG_NAME="Main.cpp">
+      <option name="sourceFile" value="OOP\src\OOP\Main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NameSpace.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="study_cpp" TARGET_NAME="NameSpace.cpp" CONFIG_NAME="NameSpace.cpp">
       <option name="sourceFile" value="practice\NameSpace.cpp" />
       <method v="2">
@@ -101,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.Main.cpp" />
         <item itemvalue="C/C++ File.NameSpace.cpp" />
       </list>
     </recent_temporary>
@@ -147,6 +154,8 @@
       <workItem from="1692107033827" duration="3026000" />
       <workItem from="1692146745172" duration="14000" />
       <workItem from="1692146836384" duration="425000" />
+      <workItem from="1692457018798" duration="106000" />
+      <workItem from="1692457625807" duration="74000" />
     </task>
     <servers />
   </component>
