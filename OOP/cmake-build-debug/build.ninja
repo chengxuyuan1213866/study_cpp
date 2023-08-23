@@ -55,6 +55,12 @@ build CMakeFiles/OOP.dir/src/OOP111/ex10_2Rect.cpp.o: CXX_COMPILER__OOP_unscanne
   OBJECT_DIR = CMakeFiles/OOP.dir
   OBJECT_FILE_DIR = CMakeFiles/OOP.dir/src/OOP111
 
+build CMakeFiles/OOP.dir/src/OOP1/Student/Student.cpp.o: CXX_COMPILER__OOP_unscanned_Debug /cygdrive/e/Cfile/C++/study_cpp/OOP/src/OOP1/Student/Student.cpp || cmake_object_order_depends_target_OOP
+  DEP_FILE = CMakeFiles/OOP.dir/src/OOP1/Student/Student.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/OOP.dir
+  OBJECT_FILE_DIR = CMakeFiles/OOP.dir/src/OOP1/Student
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OOP
@@ -63,7 +69,7 @@ build CMakeFiles/OOP.dir/src/OOP111/ex10_2Rect.cpp.o: CXX_COMPILER__OOP_unscanne
 #############################################
 # Link the executable OOP.exe
 
-build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP111/ex10_2Rect.cpp.o
+build OOP.exe: CXX_EXECUTABLE_LINKER__OOP_Debug CMakeFiles/OOP.dir/src/OOP111/ex10_2Rect.cpp.o CMakeFiles/OOP.dir/src/OOP1/Student/Student.cpp.o
   FLAGS = -g
   LINK_FLAGS = -Wl,--enable-auto-import
   OBJECT_DIR = CMakeFiles/OOP.dir

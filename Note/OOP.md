@@ -299,5 +299,110 @@ Rect::Rect(int len,int wid) :length(len),width(wid)
 }
 ```
 
+##### 默认构造函数
 
+C++会给没有构造函数的类提供一个默认的构造函数，这个默认的构造没有参数，也不做任何事，相当与下面的构造函数
+
+```c++
+Rect::Rect()
+{
+    
+}
+```
+
+
+
+## 构析函数
+
+与变量一样，在函数内部定义的对象称为局部变量，当程序运行离开对象所在函数后，该对象就消失，由于类中成员函数可以有指针，对象中可能会有动态分配的内存，这就需要在对象消失前释放内存，C++提供了构析函数，可以进行内存释放等清理工作。
+
+### 构析函数的特征
+
+1. 构析函数的名字为符号**“~”**加类名
+2. **构析函数没有参数，也不能指定返回值类型**
+3. 一个类中只能定义一个构析函数，所以构析函数不能重载
+4. 当一个类消失时，自动调用构析函数
+
+##### 构析函数的声明
+
+```c++
+~Rect();
+```
+
+##### 构析函数的定义
+
+```c++
+Rect::~Rect()
+{
+    .......
+}
+```
+
+```c++
+#include <iostream>
+#include <string>
+#include <cstring>
+
+using namespace std;
+class Student
+{
+private:
+    int number;
+    char *name;
+    int age;
+    float score;
+public:
+    Student();
+    Student(int no, char *n, int a, float s);
+    ~Student();
+    void show();
+};
+Student::Student()
+{
+    number = 0;
+    name = NULL;
+    age  = 0;
+    score = 0;
+}
+Student::Student(int no, char *n, int a, float s)
+{
+    number = no;
+    name = new char[strlen(n)+1];
+    strcpy(name, n);
+    age  = a;
+    score = s;
+}
+
+Student::~Student()
+{
+    if(name!=NULL)
+    {
+        cout << name << "同学即将退学" << endl;
+        delete []name;   // 释放空间
+    }
+    else
+    {
+        cout << "有一个同学即将退学" << endl;
+    }
+}
+void Student::show()
+{
+    if(name!=NULL)
+    {
+        cout << "学号:" << number << "\t";
+        cout << "姓名:" << name << "\t";
+        cout << "年龄:" << age << "\t";
+        cout << "成绩:" << score << endl;
+    }
+}
+int main()
+{
+    Student s1(20200101, "张三", 20, 95);
+    Student s2(20200101, "李四", 22, 90);
+    s1.show();
+    s2.show();
+    return 0;
+}
+
+```
 

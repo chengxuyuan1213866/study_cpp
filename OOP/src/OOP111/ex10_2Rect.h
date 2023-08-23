@@ -25,8 +25,13 @@ public:
     }
 
     Rect(int len, int wid);
+    ~Rect();
 };
 
 Rect::Rect(int len,int wid) :length(len),width(wid)
 {
+}
+Rect::~Rect()
+{
+
 }
