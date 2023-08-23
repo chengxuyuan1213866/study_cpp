@@ -1,4 +1,4 @@
-# Install script for directory: E:/Cfile/C++/study_cpp/OOP
+# Install script for directory: E:/Cfile/C++/study_cpp/OOP111
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-6lxdgb"
-      binary: "E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-6lxdgb"
+      source: "E:/Cfile/C++/study_cpp/OOP111/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-6lxdgb"
+      binary: "E:/Cfile/C++/study_cpp/OOP111/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-6lxdgb"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -306,8 +306,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-59ckpl"
-      binary: "E:/Cfile/C++/study_cpp/OOP/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-59ckpl"
+      source: "E:/Cfile/C++/study_cpp/OOP111/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-59ckpl"
+      binary: "E:/Cfile/C++/study_cpp/OOP111/cmake-build-debug-mingw/CMakeFiles/CMakeScratch/TryCompile-59ckpl"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"

@@ -133,5 +133,171 @@ public:
 
 这种定义方式与class声明的结果完全相同。
 
+## 类的成员函数
+
+可以在类中直接定义，也可以在类的外部定义，
+
+```c++
+// 在外部定义的格式
+函数类型 类名::成员函数名(参数说明)
+{
+    函数体
+}
+```
+
+```c++
+// 将方法直接在类中
+#include <iostream>
+using namespace std;
+#define PI 3.1415926535
+
+class Circle{
+private:
+    double radius;
+public:
+    double getRadius() const {
+        return radius;
+    }
+
+    void setRadius(double radius) {
+        Circle::radius = radius;
+    }
+    double getArea()
+    {
+        return PI*radius*radius;
+    }
+};
+
+int main()
+{
+    Circle c1;
+    c1.setRadius(3.0);
+    cout << "圆的面积是" <<c1.getArea() << endl;
+    return 0;
+}
+```
+
+## 内联函数成员
+
+类的成员函数也可以是内联函数，要使一个类成员函数成为内联函数，有两种方法
+
+- 一种是将成员函数的定义直接写在类中,如果函数足够简单，那么C++编译系统会将类中定义的成员函数当作内联函数处理；
+- 另一种是在类的外部定义函数，并使用**inline**指定为内联函数
+
+```c++
+inline void Circle::setRadius(double r)
+{
+    radius = r;
+}
+```
+
+```c++
+#include <iostream>
+using namespace std;
+#define PI 3.1415926535
+
+class Circle{
+private:
+    double radius;
+public:
+    double getRadius() const {
+        return radius;
+    }
+
+    void setRadius(double r);
+    double getArea()
+    {
+        return PI*radius*radius;
+    }
+};
+inline void Circle::setRadius(double r)
+{
+    radius = r;
+}
+int main()
+{
+    Circle c1;
+    c1.setRadius(3.0);
+    cout << "圆的面积是" <<c1.getArea() << endl;
+    return 0;
+}
+```
+
+## 带默认值参数的成员函数
+
+与一般函数相同，类的成员函数也可以带有默认的参数值。
+
+默认参数值只能在声明或者定义的**某一处**给出，不能在两处都给出
+
+![image-20230823011059905](https://s2.loli.net/2023/08/23/r9h5pKOYHubi3J2.png)
+
+## 验证对象所占内存
+
+```c++
+#include <iostream>
+class Rect{
+private:
+    int length;
+    int width;
+public:
+    void setLength(int l) {
+        length = l;
+    }
+    void setWidth(int w) {
+        width = w;
+    }
+    int getArea(){
+        return length*width;
+    }
+    int getPerimeter(){
+        return 2*(length+width);
+    }
+};
+```
+
+上面的矩形类，有两个int属性，所以Rect占8个字节
+
+```c++
+#include <iostream>
+#include "ex10_2Rect.h"
+using namespace std;
+int main()
+{
+    Rect c1,c2;
+    cout<< sizeof c1 << endl;
+    cout << sizeof c2 << endl;
+    cout << "c1的地址" << &c1 << endl;
+    cout << "c2的地址" << &c2 << endl;
+    cout << "c2+1的地址" << &c2+1 << endl;
+    cout << "c2+2的地址" << &c2+2 << endl;
+    cout << "c2+3的地址" << &c2+3 << endl;
+	// 每次对地址增加时，增加8个字节
+    return 0;
+}
+```
+
+## 构造函数
+
+对象初始化时，为数据成员设置初始值，C++提供了构造函数，可以为对象初始化。
+
+构造函数的特点
+
+- 构造函数与类名相同
+- 不能定义构造函数的类型（不能指明构造函数的返回值类型）
+- 构造函数应该声明为公有的
+- 构造函数不能在程序中调用，进行对象初始化时自动调用
+
+构造函数的作用
+
+构造函数的作用就是在创建对象时，利用特定的值构造对象，将对象初始化为一个特定的状态，使此对象与有区别于其他对象的特征
+
+##### 初始化表
+
+```c++
+Rect::Rect(int len,int wid) :length(len),width(wid)
+{
+}
+```
+
 
 

@@ -831,7 +831,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OOP"
+			"value" : "src/OOP111"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1268,6 +1268,78 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "src/OOP111_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/e/Cfile/C++/study_cpp/OOP/cmake-build-debug"
+		},
+		{
+			"name" : "src/OOP111_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "src/OOP111_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/e/Cfile/C++/study_cpp/OOP"
+		},
+		{
+			"name" : "src/OOP_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/e/Cfile/C++/study_cpp/OOP/cmake-build-debug"
+		},
+		{
+			"name" : "src/OOP_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "src/OOP_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/e/Cfile/C++/study_cpp/OOP"
 		}
 	],
 	"kind" : "cache",
