@@ -406,3 +406,90 @@ int main()
 
 ```
 
+构析的函数的作用与构造函数相反，作用是：在删除一个对象前被调用，释放该对象成员的内存空间以及其他的一些清理工作
+
+- 在构造函数中使用new 运算符申请内存
+- 在构析函数中使用delete运算符释放内存
+
+## 拷贝构造函数
+
+拷贝构造函数可以实现一个已经存在对象的初始化新对象，拷贝构造函数的参数为该类对象的引用
+
+```c++
+#include <iostream>
+#include <string>
+#include <cstring>
+
+using namespace std;
+class Student
+{
+private:
+    int number;
+    char *name;
+    int age;
+    float score;
+public:
+    Student();
+    Student(int no, char *n, int a, float s);
+    Student(const Student &s); // 拷贝构造函数
+    ~Student();                 // 构析函数
+    void show();                // 显示学生信息
+};
+Student::Student()
+{
+    number = 0;
+    name = NULL;
+    age  = 0;
+    score = 0;
+}
+Student::Student(int no, char *n, int a, float s)
+{
+    number = no;
+    name = new char[strlen(n)+1];
+    strcpy(name, n);
+    age  = a;
+    score = s;
+}
+Student::Student(const Student &s) {
+    number = s.number;
+    name = new char[strlen(s.name) + 1];
+    strcpy(name,s.name);
+    age = s.age;
+    score = s.score;
+}
+Student::~Student()
+{
+    if(name!=NULL)
+    {
+        cout << name << "同学即将退学" << endl;
+        delete []name;
+    }
+    else
+    {
+        cout << "有一个同学即将退学" << endl;
+    }
+}
+void Student::show()
+{
+    if(name!=NULL)
+    {
+        cout << "学号:" << number << "\t";
+        cout << "姓名:" << name << "\t";
+        cout << "年龄:" << age << "\t";
+        cout << "成绩:" << score << endl;
+    }
+}
+int main()
+{
+    Student s1(20200101, "张三", 20, 95);
+    Student s2(20200101, "李四", 22, 90);
+    Student s3(s1);
+    s1.show();
+    s2.show();
+    s3.show();
+    return 0;
+}
+
+```
+
+**如果一个函数需要一个对象作为参数，一般将该参数声明为常引用对象。**
