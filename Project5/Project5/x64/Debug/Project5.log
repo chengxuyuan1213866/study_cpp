@@ -1,0 +1,1 @@
+﻿E:\VS2022\IDE\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(6737,3): error MSB4024: 未能加载导入的项目文件“E:\VS2022\IDE\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets”。第 816 行，位置 8 上的开始标记“_RestoreCrossTargetinf”与结束标记“_RestoreCrossTargeting”不匹配。 第 816 行，位置 37。

@@ -1,0 +1,6 @@
+# ninja log v5
+21	1337	7144173214372402	CMakeFiles/OOP.dir/src/OOP/Main.cpp.obj	4d2a36c3ee29bf5c
+1	3169	7141609440357035	CMakeFiles/Main.dir/src/OOP/Main.cpp.obj	ef17c6536ef90bec
+5	570	7144277834670920	CMakeFiles/OOP.dir/src/OOP/Rect.cpp.obj	4567f44e7d82d03b
+570	752	7144277836442512	OOP.exe	783e4f5e5ddb7bea
+3	1338	7144173214392352	CMakeFiles/OOP.dir/src/OOP1/Circle.cpp.obj	d9335e0ae29e838c
