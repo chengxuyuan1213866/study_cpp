@@ -46,7 +46,7 @@ Student::~Student()
     }
     else
     {
-        cout << "有一个同学即将退学" << endl;
+        cout << "有一个即将退学" << endl;
     }
 }
 void Student::show()
