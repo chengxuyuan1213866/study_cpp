@@ -1,10 +1,7 @@
-## 深复制和浅复制
+//
+// Created by Administrator on 2023/8/27.
+//
 
-事实上，即使不提供拷贝的构造函数，也能实现用对象s初始化对象，这是因为C++为类提供了默认的拷贝构造函数。当类中没有定义拷贝构造函数时，系统会提供一个默认的拷贝构造函数，默认的拷贝构造函数就是将参数对象的属性值赋给新对象对应的属性。**默认的拷贝构造函数只能实现浅复制，要实现深复制需要自己定义拷贝构造函数。**
-
-##  浅复制
-
-```c++
 
 #include <iostream>
 #include <string>
@@ -70,19 +67,30 @@ int main()
     s3.show();
     return 0;
 }
-```
 
-上面没有提供拷贝构造函数，但是依然可以使用对象传参进行初始化，这就是默认拷贝构造函数的功能，
 
-等价与下边
 
-```c++
-Student::Student(const Student &s) {  //拷贝构造函数浅拷贝
-    number = s.number;
-    name = new char[strlen(s.name) + 1];
-    strcpy(name,s.name);
-    age = s.age;
-    score = s.score;
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

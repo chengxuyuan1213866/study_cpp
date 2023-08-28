@@ -37,7 +37,7 @@ Student::Student(int no, char *n, int a, float s)
     age  = a;
     score = s;
 }
-Student::Student(const Student &s) {
+Student::Student(const Student &s) {  //拷贝构造函数浅拷贝
     number = s.number;
     name = new char[strlen(s.name) + 1];
     strcpy(name,s.name);
